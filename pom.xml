@@ -8,5 +8,5 @@
     <artifactId>twitter.streaming.demo</artifactId>
     <version>1.0</version>
 
-
+    <!-- Here's the Build pipeline, Configuring it later under modules(producer, consumer) -->
 </project>
