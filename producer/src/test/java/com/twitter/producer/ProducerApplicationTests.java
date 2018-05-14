@@ -1,4 +1,4 @@
-package twitter.streaming.producer.producer;
+package com.twitter.producer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

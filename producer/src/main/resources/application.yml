@@ -1,0 +1,1 @@
+# Twitter Social Configs:spring:  social:    twitter:      appId: APP_ID      appSecret: APP_SECRET      accessToken: ACCESS_TOKEN      accessTokenSecret: ACCESS_TOKEN_SECRET
