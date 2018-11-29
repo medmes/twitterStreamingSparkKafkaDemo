@@ -1,13 +1,12 @@
-package com.twitter.producer.service;
+package com.twitter.producer.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.stereotype.Service;
 
-@Service
-public class KafkaProducerService {
+
+public class KafkaProducer {
 
     private final Logger log = LoggerFactory.getLogger(getClass());
 

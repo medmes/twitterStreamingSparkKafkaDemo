@@ -1,7 +1,7 @@
 package com.twitter.producer.config;
 
-import com.fasterxml.jackson.databind.ser.std.StringSerializer;
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
@@ -46,4 +46,8 @@ public class KafkaConfig {
         return new KafkaTemplate<>(producerFactory());
     }
 
+    @Bean
+    public KafkaProducer kafkaProducer() {
+        return new KafkaProducer();
+    }
 }
