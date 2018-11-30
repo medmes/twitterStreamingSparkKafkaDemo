@@ -3,7 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>twitter.streaming.producer</groupId>
 	<artifactId>producer</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
@@ -12,32 +11,13 @@
 	<description>Demo Twitter Streaming Producer using Spring Boot Module.</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>twitter.streaming.demo</groupId>
+		<artifactId>demo</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
 	</parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-        <spring.social.twitter.version>1.5.12.RELEASE</spring.social.twitter.version>
-		<spring-kafka.version>2.1.7.RELEASE</spring-kafka.version>
-
-	</properties>
-
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -54,12 +34,6 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<version>${spring-kafka.version}</version>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
 		</dependency>
 
 	</dependencies>

@@ -5,8 +5,55 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>twitter.streaming.demo</groupId>
-    <artifactId>twitter.streaming.demo</artifactId>
+    <artifactId>demo</artifactId>
     <version>1.0</version>
+    <packaging>pom</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring.social.twitter.version>1.5.12.RELEASE</spring.social.twitter.version>
+        <spring-kafka.version>2.1.7.RELEASE</spring-kafka.version>
+        <spark.version>2.2.1</spark.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Modules -->
+    <modules>
+        <module>producer</module>
+        <module>consumer</module>
+    </modules>
     <!-- Here's the Build pipeline, Configuring it later under modules(producer, consumer) -->
 </project>
